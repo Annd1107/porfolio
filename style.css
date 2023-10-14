@@ -1,0 +1,145 @@
+.intro{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(95, 123, 148);
+    height:595px;
+    margin-top:20px;
+    border-bottom: 1px solid black;
+    padding:30px;
+}
+.menu{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top:0;
+    background-color: white;
+    height: 60px;
+    text-align: center !important;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.intro h3{
+    padding: 100px;
+    font-size: 50px;
+}
+.intro img{
+    border-radius: 50%;
+    margin:20px;
+    width:550px
+}
+.intro h4{
+    padding:110px;
+    text-align: center;
+}
+body{
+    height:2900px;
+    background-color:blue ;
+
+}
+.col-md-3{
+    display: flex;
+    flex-direction: row;
+}
+.active , h6 a:hover{
+    color: black !important; 
+    border-bottom: 1px solid black;
+}
+h6 a{
+    color: rgb(136, 136, 136) !important;
+}
+li{
+    font-size:20px;
+}
+h1{
+    border-bottom: 2px solid black;
+}
+.container .creationsinfo a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding:7px;
+    border-radius: 10px;    
+}
+.creations li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info{
+    margin-left:10px
+}
+.card{
+    background-color:rgb(95, 123, 148)
+}
+.resume{
+    border: hidden black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+.about{
+    border: hidden black;
+    border-radius: 10px;
+    padding:10px;
+    background-color: white;
+}
+.creations{
+    border: hidden black;
+    border-radius: 10px;
+    padding:10px;
+    background-color: white;
+}
+.arc{
+    background-color: rgb(95, 123, 148);
+    padding: 50px;
+}
+.sch{
+    padding-left:50px;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.el, .mi{
+    border-bottom:1px solid black;
+}
+.scho{
+    font-size:30px
+}
+.moreinfoinfo li, .addressinfo li{
+    list-style-type: none ;
+}
+.creationsinfo img{
+    width:400px;
+    height:200px;
+}
+.creationsinfo .wthr{
+    height:400px;
+    width:500px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-left:280px;
+}
+.phcd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.ml4 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5em;
+  }
+  .ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
+  }
+  
