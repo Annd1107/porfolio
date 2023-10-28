@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: row;
     background-color: rgb(95, 123, 148);
-    height:595px;
+    height:600px;
     margin-top:20px;
     border-bottom: 1px solid black;
     padding:30px;
 }
 .menu{
     padding-top: 30px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     position: sticky;
@@ -25,7 +26,7 @@
 .intro img{
     border-radius: 50%;
     margin:20px;
-    width:550px
+    width:500px
 }
 .intro h4{
     padding:110px;
@@ -40,9 +41,17 @@ body{
     display: flex;
     flex-direction: row;
 }
-.active , h6 a:hover{
+h6 a:hover{
     color: black !important; 
-    border-bottom: 1px solid black;
+    font: bold;
+    border: none;
+    font-size: 19px;
+}
+.menu .active{
+    color: black !important; 
+    border: none;
+    font-size: 19px;
+    font-weight: bold ;
 }
 h6 a{
     color: rgb(136, 136, 136) !important;
@@ -54,16 +63,15 @@ h1{
     border-bottom: 2px solid black;
 }
 .container .creationsinfo a{
+    display: flex;
     text-decoration: none;
     color: black;
-    border-bottom: 1px solid black;
     padding:7px;
     border-radius: 10px;    
 }
 .creations li{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 .info{
     margin-left:10px
@@ -112,27 +120,25 @@ h1{
     height:200px;
 }
 .creationsinfo .wthr{
-    height:400px;
-    width:500px;
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    margin-left:280px;
+    margin-right: 1000px;
+}
+.wthr img{
+    height:300px;
+    width:400px
 }
 .phcd{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 .nt{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 .ml4 {
     position: relative;
     font-weight: 900;
-    font-size: 4.5em;
+    font-size: 2.5em;
+    margin-left:4.5em;
   }
   .ml4 .letters {
     position: absolute;
@@ -142,4 +148,87 @@ h1{
     right: 0;
     opacity: 0; 
   }
-  
+  .lii a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* Mobile Devices*/
+@media only screen and (max-width: 767px) {
+    .menu .active{
+        color: black !important; 
+        border-bottom: 2px solid black;
+        border: none;
+        font-size: 12px;
+        font-weight: bold ;
+    }
+    .menu{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        position: sticky;
+        top:0;
+        background-color: white;
+        height: 60px;
+        text-align: center !important;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        width:100%;
+    }
+    .menu h6 a{
+        font-size: 10px;
+    }
+    .intro img{
+        border-radius: 50%;
+        margin:20px;
+        width:120px;
+        height:120px;
+    }
+    .intro{
+        display: flex;
+        flex-direction: row;
+    }
+    .intro .tm{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro h3{
+        font-size:25px;
+        padding:30px
+    }
+    .intro h5{
+        font-size: 20px;
+    }
+    .intro{
+        padding-bottom:100px;
+        height:300px;
+    }
+    .creationsinfo img{
+        width:70px;
+        height:50px;
+    }
+    .creationsinfo .wthr{
+        height:50px;
+        width:70px;
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        margin-left:20px;
+    }
+    .m14 {
+        position: relative;
+        font-weight: 900;
+        font-size: 2.5em;
+        margin-left:0.25em !important;
+    }
+    .m14 .letters{
+        position: relative;
+        font-weight: 900;
+        font-size: 2.5em;
+        margin-left:0.25em !important;
+    }
+    .creationsinfo img{
+        width:100px;
+        height:100px;
+    }
+}
